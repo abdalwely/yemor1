@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+.header {
+    background: white;
+    border-radius: 0;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 1px solid #1fa03b9f;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-qr {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.title-section {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #7cb342;
+    text-shadow: none;
+}
+
+.mosque-icon {
+    font-size: 40px;
+    margin-top: 10px;
+    color: #7cb342;
+}
+
+.support-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Sponsors Section */
+.sponsors-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.support-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sponsor-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsor-image {
+    width: 210px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.sponsor-item span {
+    font-size: 12px;
+    color: #666;
+    max-width: 100px;
+}
+
+/* Statistics Section */
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 0;
+    
+}
+
+.stat-item {
+    text-align: center;
+    color: #333;
+    padding: 10px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #7cb342;
+    
+}
+
+.stat-number.green {
+    color: #7cb342;
+    font-size: 80px;
+  
+}
+
+.stat-label {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+    color: #528933;
+}
+
+/* Images Section */
+.media-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    flex: 1;
+    height: 360px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Video Section */
+.video-section {
+    margin-bottom: 20px;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 350px;
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Progress Section */
+.progress-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    background: white;
+    width: 1180px;
+    padding: 30px;
+    margin-left: 1000px;
+    
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Countdown */
+.countdown {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #b3af42;
+    display: block;
+}
+
+.countdown-label {
+    font-size: 14px;
+    color: #1194bc;
+    margin-top: 5px;
+}
+
+.countdown-separator {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7cb342;
+}
+
+.progress-info {
+    flex: 1;
+    text-align: center;
+}
+
+.progress-title {
+    color: #26adda;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/* Semi-circle Progress */
+.progress-circle {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.progress-circle svg {
+    width: 200px;
+    height: 100px;
+    transform: rotate(0deg);
+}
+
+.progress-bg {
+    stroke-linecap: butt !important;
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 15;
+}
+
+.progress-bar {
+    stroke-linecap: butt !important;
+    fill: none;
+    stroke: #7cb342;
+    stroke-width: 15;
+    transition: stroke-dasharray 0.5s ease, stroke 0.5s ease;
+}
+
+/* Ensure all paths in the progress circle have flat ends */
+.progress-text {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-label {
+    position: absolute;
+    top: -25px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #20b7d2;
+}
+
+/* Timeline Bars */
+.timeline-section {
+    margin-right: 120px;
+  
+    
+}
+
+.timeline-title {
+    text-align: right;
+    color: #666;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.timeline-bar {
+   
+}
+
+.timeline-steps {
+    display: flex;
+    height: 60px;
+    border-radius: 45px;
+    overflow: hidden;
+    
+}
+
+.timeline-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 10, 10);
+    font-size: 12px;
+    
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    border-left: 2px solid rgba(255,255,255,0.3);
+}
+
+.timeline-step:first-child {
+    border-left: none;
+}
+
+/* Timeline colors */
+.step-1 { background: #7cb342; flex: 1; }
+.step-2 { background: #7cb342; flex: 1; }
+.step-3 { background: #7cb342; flex: 1; }
+.step-4 { background: #7cb342; flex: 1; }
+.step-5 { background: #7cb342; flex: 1.5; }
+.step-6 { background: #7cb342; flex: 1; }
+.step-7 { background: #7cb342; flex: 1; }
+.step-8 { background: #319d96; flex: 1; }
+.step-9 { background: #ffffff; flex: 1; }
+.step-10 { background: #ffffff; flex: 1; }
+.step-11 { background: #ffffff; flex: 1; }
+.step-12 { background: #ffffff; flex: 1; }
+
+.bottom-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Second timeline */
+.step2-1 {background: #7cb342; flex: 1; }
+.step2-2 {background: #7cb342; flex: 1; }
+.step2-3 {background: #7cb342; flex: 1; }
+.step2-4 {background: #7cb342; flex: 1; }
+.step2-5 {background: #7cb342; flex: 1.5; }
+.step2-6 {background: #7cb342; flex: 1; }
+.step2-7 {background: #7cb342; flex: 1; }
+.step2-8 {background: #7cb342; flex: 1; }
+.step2-9 {background: #7cb342; flex: 1; }
+.step2-10  {background: #319d96; flex: 1; }
+.step2-11  {background: #ffffff; flex: 1; }
+.step2-12  {background: #ffffff; flex: 1; }
+
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .progress-section {
+        flex-direction: column;
+        
+        text-align: center;
+    }
+
+    .progress-circle {
+        margin: 20px 0;
+    }
+
+    .countdown {
+        justify-content: center;
+        right: 1000px;
+    }
+
+    .timeline-step {
+        font-size: 10px;
+        padding: 2px;
+    }
+    
+    .controls button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .video-section {
+        height: 250px;
+    }
+    
+    .media-section {
+        flex-direction: column;
+    }
+    .timeline-image-bar {
+        background: none !important;
+        box-shadow: none !important;
+        padding: 0;
+        margin: 0 0 30px 0;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .timeline-image-wrapper {
+        width: 190%;
+        
+        max-width: 3000%;
+        height: 100px;
+        border-radius: 16px;
+    }
+    .timeline-img-mask {
+        width: 190%;
+        height: 70px;
+        
+        border-radius: 16px;
+    }
+    .timeline-img {
+        width: 200%;
+        height: 150%;
+        object-fit: cover;
+        display: block;
+        border: none;
+        box-shadow: none;
+        pointer-events: none;
+        user-select: none;
+        background: none;
+    }
+}

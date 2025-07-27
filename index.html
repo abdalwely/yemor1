@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع بناء مسجد بحي الضباب بمدينة الدمام</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <img src="images/logo.png" alt="شعار المسجد" class="header-logo">
+                <div class="title-section">
+                    <h1 class="main-title">مشروع بناء مسجد بحي الضباب بمدينة الدمام</h1>
+                    
+                </div>
+                <img src="images/gr.jpg" alt="QR باركود" class="header-qr">
+            </div>
+        </header>
+
+        <!-- Sponsors Section -->
+        <div class="sponsors-section">
+            <div class="support-text">
+               
+            </div>
+            <div class="sponsor-logos">
+                <div class="sponsor-item">
+                    
+                    <img src="images/20250715_194045.jpg" alt="المكتب الهندسي" class="sponsor-image">
+                    <span>المكتب الهندسي</span>
+                </div>
+                <div class="sponsor-item">
+                    <img src="images/20250715_194024.jpg" alt="المقاول" class="sponsor-image">
+                    <span>المقاول</span>
+                </div>
+                <div class="sponsor-item">
+                    <img src="images/20250715_193959.jpg" alt="بالتعاون" class="sponsor-image">
+                    <span>بالتعاون</span>
+                </div>
+                <div class="sponsor-item">
+                    <img src="images/1.jpg" alt="إدارة" class="sponsor-image">
+                    <span>إدارة</span>
+                </div>
+                <div class="sponsor-item">
+                    <img src="images/20250715_193930.jpg" alt="بدعم" class="sponsor-image">
+                    <span>بدعم</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number green">1,361</div>
+                <div class="stat-label">إجمالي مساحة المسجد</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number green">480</div>
+                <div class="stat-label">إجمالي عدد المصلين</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number green">14</div>
+                <div class="stat-label">شهر<br>مدة المشروع</div>
+            </div>
+        </div>
+
+        <!-- Images Section -->
+        <div class="media-section">
+            <div class="image-placeholder interior">
+                <img src="images\mosque1.jpg" alt="صورة داخلية للمسجد">
+            </div>
+            <div class="image-placeholder exterior">
+                <img src="images\mosque2.jpg" alt="صورة خارجية للمسجد">
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <iframe src="https://yaamur-get.github.io/thbat/" 
+                    frameborder="0" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+          
+            <div class="progress-circle">
+                <div class="progress-label">نسبة الإنجاز</div>
+                <svg>
+                    <path class="progress-bg" d="M 20 80 A 60 60 0 0 1 180 80" stroke-linecap="butt" style="stroke-linecap: butt; stroke-linejoin: miter;"></path>
+                    <path class="progress-bar" id="progressPath" d="M 20 80 A 60 60 0 0 1 180 80" stroke-linecap="butt" style="stroke-linecap: butt; stroke-linejoin: miter;"></path>
+                </svg>
+                <div class="progress-text" id="progressText">35.00 %</div>
+            </div>
+            <div class="progress-info">
+                <h2 class="progress-title">أعمال المباني</h2>
+                <p class="progress-subtitle">المرحلة الحالية</p>
+            </div>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">123</span>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">23</span>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">06</span>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">55</span>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline-section">
+            
+            <div class="timeline-bar timeline-image-bar">
+                <div class="timeline-image-wrapper">
+                    <div class="timeline-img-mask">
+                        <img src="images/شريط اول.jpg" class="timeline-img" style="width: 950px;"  draggable="false">
+                    </div>
+                    <div class="timeline-title" style="margin-right: 565px; margin-top: 10px;top: 300px;"> يحدث الان : </div>
+                </div>
+            </div>
+
+            <div class="timeline-title">أعمال العظم:</div>
+            <div class="timeline-bar timeline-image-bar">
+                <div class="timeline-image-wrapper">
+                    <div class="timeline-img-mask "style="width: 200px;">
+                        <img src="images/شريط ثاني.jpg" class="timeline-img"style="width: 950px; draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
